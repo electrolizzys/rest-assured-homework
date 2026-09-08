@@ -1,4 +1,4 @@
-package tests;
+package ge.tbc.testautomation;
 
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
@@ -10,11 +10,11 @@ import org.testng.annotations.Test;
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.equalTo;
 import static org.hamcrest.Matchers.notNullValue;
-import static data.ApiConstants.BookStore.BASE_URI;
-import static data.ApiConstants.BookStore.BOOK;
-import static data.ApiConstants.BookStore.BOOKS;
-import static data.ApiConstants.BookStore.ISBN_PARAM;
-import static data.ApiConstants.BookStore.UNAUTHORIZED_MESSAGE;
+import static ge.tbc.testautomation.data.ApiConstants.BookStore.BASE_URI;
+import static ge.tbc.testautomation.data.ApiConstants.BookStore.BOOK;
+import static ge.tbc.testautomation.data.ApiConstants.BookStore.BOOKS;
+import static ge.tbc.testautomation.data.ApiConstants.BookStore.ISBN_PARAM;
+import static ge.tbc.testautomation.data.ApiConstants.BookStore.UNAUTHORIZED_MESSAGE;
 
 public class BookStoreApiTest {
 
