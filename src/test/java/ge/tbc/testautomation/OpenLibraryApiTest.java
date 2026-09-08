@@ -1,4 +1,4 @@
-package tests;
+package ge.tbc.testautomation;
 
 import io.restassured.RestAssured;
 import org.testng.annotations.BeforeClass;
@@ -10,12 +10,12 @@ import static org.hamcrest.Matchers.greaterThan;
 import static org.hamcrest.Matchers.hasItem;
 import static org.hamcrest.Matchers.not;
 import static org.hamcrest.Matchers.empty;
-import static data.ApiConstants.OpenLibrary.BASE_URI;
-import static data.ApiConstants.OpenLibrary.EXPECTED_AUTHOR;
-import static data.ApiConstants.OpenLibrary.EXPECTED_TITLE;
-import static data.ApiConstants.OpenLibrary.KEYWORD;
-import static data.ApiConstants.OpenLibrary.QUERY_PARAM;
-import static data.ApiConstants.OpenLibrary.SEARCH;
+import static ge.tbc.testautomation.data.ApiConstants.OpenLibrary.BASE_URI;
+import static ge.tbc.testautomation.data.ApiConstants.OpenLibrary.EXPECTED_AUTHOR;
+import static ge.tbc.testautomation.data.ApiConstants.OpenLibrary.EXPECTED_TITLE;
+import static ge.tbc.testautomation.data.ApiConstants.OpenLibrary.KEYWORD;
+import static ge.tbc.testautomation.data.ApiConstants.OpenLibrary.QUERY_PARAM;
+import static ge.tbc.testautomation.data.ApiConstants.OpenLibrary.SEARCH;
 
 public class OpenLibraryApiTest {
 

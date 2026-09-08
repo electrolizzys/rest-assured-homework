@@ -1,4 +1,4 @@
-package tests;
+package ge.tbc.testautomation;
 
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
@@ -13,15 +13,15 @@ import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.equalTo;
 import static org.hamcrest.Matchers.notNullValue;
 import static org.testng.Assert.assertTrue;
-import static data.ApiConstants.PetStore.BASE_URI;
-import static data.ApiConstants.PetStore.LOGIN;
-import static data.ApiConstants.PetStore.NAME_PARAM;
-import static data.ApiConstants.PetStore.ORDER;
-import static data.ApiConstants.PetStore.PASSWORD_PARAM;
-import static data.ApiConstants.PetStore.PET;
-import static data.ApiConstants.PetStore.PET_BY_ID;
-import static data.ApiConstants.PetStore.STATUS_PARAM;
-import static data.ApiConstants.PetStore.USERNAME_PARAM;
+import static ge.tbc.testautomation.data.ApiConstants.PetStore.BASE_URI;
+import static ge.tbc.testautomation.data.ApiConstants.PetStore.LOGIN;
+import static ge.tbc.testautomation.data.ApiConstants.PetStore.NAME_PARAM;
+import static ge.tbc.testautomation.data.ApiConstants.PetStore.ORDER;
+import static ge.tbc.testautomation.data.ApiConstants.PetStore.PASSWORD_PARAM;
+import static ge.tbc.testautomation.data.ApiConstants.PetStore.PET;
+import static ge.tbc.testautomation.data.ApiConstants.PetStore.PET_BY_ID;
+import static ge.tbc.testautomation.data.ApiConstants.PetStore.STATUS_PARAM;
+import static ge.tbc.testautomation.data.ApiConstants.PetStore.USERNAME_PARAM;
 
 public class PetStoreApiTest {
 
