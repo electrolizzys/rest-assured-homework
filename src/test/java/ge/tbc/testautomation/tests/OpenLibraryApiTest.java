@@ -1,21 +1,21 @@
-package ge.tbc.testautomation;
+package ge.tbc.testautomation.tests;
 
 import io.restassured.RestAssured;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import static io.restassured.RestAssured.given;
-import static org.hamcrest.Matchers.equalTo;
-import static org.hamcrest.Matchers.greaterThan;
-import static org.hamcrest.Matchers.hasItem;
-import static org.hamcrest.Matchers.not;
-import static org.hamcrest.Matchers.empty;
 import static ge.tbc.testautomation.data.ApiConstants.OpenLibrary.BASE_URI;
 import static ge.tbc.testautomation.data.ApiConstants.OpenLibrary.EXPECTED_AUTHOR;
 import static ge.tbc.testautomation.data.ApiConstants.OpenLibrary.EXPECTED_TITLE;
 import static ge.tbc.testautomation.data.ApiConstants.OpenLibrary.KEYWORD;
 import static ge.tbc.testautomation.data.ApiConstants.OpenLibrary.QUERY_PARAM;
 import static ge.tbc.testautomation.data.ApiConstants.OpenLibrary.SEARCH;
+import static io.restassured.RestAssured.given;
+import static org.hamcrest.Matchers.empty;
+import static org.hamcrest.Matchers.equalTo;
+import static org.hamcrest.Matchers.greaterThan;
+import static org.hamcrest.Matchers.hasItem;
+import static org.hamcrest.Matchers.not;
 
 public class OpenLibraryApiTest {
 
