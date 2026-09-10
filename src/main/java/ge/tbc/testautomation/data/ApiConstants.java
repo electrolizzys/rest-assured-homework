@@ -13,6 +13,25 @@ public final class ApiConstants {
         public static final String UNAUTHORIZED_MESSAGE = "User not authorized!";
         public static final String FIRST_BOOK_AUTHOR = "Richard E. Silverman";
         public static final String SECOND_BOOK_AUTHOR = "Addy Osmani";
+        public static final String SECOND_LAST_BOOK_AUTHOR = "Marijn Haverbeke";
+        public static final String LAST_BOOK_AUTHOR = "Nicholas C. Zakas";
+    }
+
+    public static final class Escuela {
+        public static final String BASE_URI = "https://api.escuelajs.co/api";
+        public static final String USERS = "/v1/users";
+        public static final String LOGIN = "/v1/auth/login";
+        public static final String PROFILE = "/v1/auth/profile";
+        public static final String AVATAR = "https://picsum.photos/800";
+    }
+
+    public static final class Booking {
+        public static final String BASE_URI = "https://restful-booker.herokuapp.com";
+        public static final String AUTH = "/auth";
+        public static final String BOOKING = "/booking";
+        public static final String BOOKING_BY_ID = "/booking/{id}";
+        public static final String USERNAME = "admin";
+        public static final String PASSWORD = "password123";
     }
 
     public static final class PetStore {
