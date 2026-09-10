@@ -11,9 +11,6 @@ public class F1DriverPojoTest {
     @Test
     public void firstDriverMatchesInitializedPojo() {
         Driver expectedDriver = new Driver("albon", 23);
-
-        f1PojoSteps
-                .getFirstDriverAsPojo()
-                .validateDriverMatches(expectedDriver);
+        f1PojoSteps.getFirstDriverAsPojo().validateDriverMatches(expectedDriver);
     }
 }

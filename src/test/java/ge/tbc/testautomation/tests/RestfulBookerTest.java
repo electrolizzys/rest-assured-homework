@@ -29,7 +29,6 @@ public class RestfulBookerTest {
                 .validateBookingViaGet()
                 .partialUpdateBooking("Updated", "Name")
                 .validateBookingViaGet()
-                .deleteBooking()
-                .validateBookingIsDeleted();
+                .deleteBooking().validateBookingIsDeleted();
     }
 }

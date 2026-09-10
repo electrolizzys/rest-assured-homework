@@ -17,13 +17,10 @@ public class EscuelaAuthTest {
         EscuelaUserRequest user = new EscuelaUserRequest(
                 faker.name().fullName(),
                 faker.internet().uuid().substring(0, 8) + "@mail.com",
-                "Pass1234",
-                AVATAR
-        );
+                "Pass1234", AVATAR);
 
         escuelaSteps
-                .createUser(user)
-                .loginWithCreatedUser()
+                .createUser(user).loginWithCreatedUser()
                 .validateTokensArePresent()
                 .getProfileWithAccessToken()
                 .validateProfileMatchesCreatedUser();
