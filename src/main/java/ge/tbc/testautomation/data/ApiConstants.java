@@ -34,6 +34,21 @@ public final class ApiConstants {
         public static final String PASSWORD = "password123";
     }
 
+    public static final class Swapi {
+        public static final String BASE_URI = "https://swapi.tech/api";
+        public static final String PLANETS = "/planets/";
+        public static final String FORMAT_PARAM = "format";
+        public static final String JSON_FORMAT = "json";
+        public static final String OK_MESSAGE = "ok";
+        public static final String FIRST_PLANET_NAME = "Tatooine";
+    }
+
+    public static final class PetStoreV3 {
+        public static final String BASE_URI = "https://petstore3.swagger.io/api/v3";
+        public static final String ORDER = "/store/order";
+        public static final String PLACED_STATUS = "placed";
+    }
+
     public static final class PetStore {
         public static final String BASE_URI = "https://petstore.swagger.io/v2";
         public static final String ORDER = "/store/order";

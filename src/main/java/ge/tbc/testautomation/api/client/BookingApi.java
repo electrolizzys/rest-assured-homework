@@ -3,6 +3,7 @@ package ge.tbc.testautomation.api.client;
 import ge.tbc.testautomation.data.models.request.BookingAuthRequest;
 import ge.tbc.testautomation.data.models.request.BookingRequest;
 import ge.tbc.testautomation.data.models.request.PartialBookingRequest;
+import ge.tbc.testautomation.data.models.requests.booking.UpdateBookingRequest;
 import io.restassured.response.Response;
 
 import static ge.tbc.testautomation.data.ApiConstants.Booking.AUTH;
@@ -53,5 +54,23 @@ public class BookingApi extends BaseApi {
                 .pathParam("id", bookingId)
                 .when()
                 .delete(BOOKING_BY_ID);
+    }
+
+    public Response createBooking(UpdateBookingRequest booking) {
+        return given()
+                .spec(BOOKING_SPEC)
+                .body(booking)
+                .when()
+                .post(BOOKING);
+    }
+
+    public Response updateBooking(int bookingId, String token, UpdateBookingRequest booking) {
+        return given()
+                .spec(BOOKING_SPEC)
+                .cookie("token", token)
+                .pathParam("id", bookingId)
+                .body(booking)
+                .when()
+                .put(BOOKING_BY_ID);
     }
 }
